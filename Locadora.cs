@@ -22,9 +22,6 @@ namespace Locadora
 
             string tipoCarro = Console.ReadLine();
 
-//            Console.ReadLine();
-
-
             Console.WriteLine(" ");
             Console.WriteLine("Quantos passageiros?");
             Console.WriteLine(" ");
@@ -39,8 +36,6 @@ namespace Locadora
 
             quantPassag = Convert.ToInt32(Console.ReadLine());
 
-            //Console.ReadLine();
-
             Console.WriteLine(" ");
             Console.WriteLine("Qual data (dd/mm/aaaa) de início da locação do carro?");
             Console.WriteLine(" ");
@@ -51,12 +46,6 @@ namespace Locadora
             Console.WriteLine(" ");
             datafim = Convert.ToDateTime(Console.ReadLine());
             Console.WriteLine(" ");
-
-            //Console.ReadLine();
-            
-            //Console.WriteLine(" " + tipoCarro + " , " + quantPassag + " , " + Convert.ToString(datainicio.ToString("dd/MM/yyyy")) + " até " + Convert.ToString(datafim.ToString("dd/MM/yyyy")));
-                        
-            //Console.ReadLine();
             
             int start = datainicio.Year * 10000 + datainicio.Month * 100
                + datainicio.Day + datainicio.Hour + datainicio.Minute + datainicio.Second;
@@ -65,14 +54,6 @@ namespace Locadora
                + datafim.Day + datafim.Hour + datafim.Minute + datafim.Second;
 
             int QuantDias = end - start;
-
-            //Console.Write(QuantDias);
-
-            //Console.ReadLine();
-            
-            //Console.Write(tipoCarro);
-
-            //Console.ReadLine();
             
             if (tipoCarro.ToLower() == "compacto" && quantPassag >= 1 && quantPassag <= 4)
             {
@@ -102,8 +83,6 @@ namespace Locadora
             {
                 Console.WriteLine("Não foram encontrados carros disponíveis nas condições informadas.");
             }
-
-            //Console.ReadLine();
         }
     }
 }
